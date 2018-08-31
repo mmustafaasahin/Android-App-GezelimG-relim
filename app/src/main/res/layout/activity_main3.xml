@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Main3Activity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="93dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginStart="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bilgiText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/textbackground"
+                android:text="Anemurium Antik Kent M.S 3.Yüzyıldan sonraya ROMA Medeniyetine dayanan kalıntılara sahip olmakla beraber;M.Ö ki dönemlerde,Başta HİTİT ler olmak üzere bir çok medeniyete ev sahipliği yaptığına dair kanıtlar mevuttur.
+Yeterli kazı ve inceleme yapılmadığı için bu konu tam anlamıyla açıklık kazanamamıştır.
+ANEMURİUM ANTİK KENT ÜÇ BÖLÜMDEN OLUŞMAKTADIR
+1.BÖLÜM:(İÇ KALE)
+Bu bölüm Anamur burnunu cevreliyen yalçın kayalıklı denize bağlanan kısmı ile 2.BÖLÜMLE SINIR teşkil eden kale surları içinde kalan bölümdür.
+Kale ve surları sapa sağlam durmaktadır.
+Bu bölümde 1800 lü yıllarda yapılmış ,denizcilere yol gösteren Deniz feneri mevcuttur
+
+https://www.tripadvisor.com.tr/ShowUserReviews-g312730-d1994635-r226556519-Anemurium-Anamur_Mersin_Icel_Turkish_Mediterranean_Coast.html#"
+                android:textColor="@android:color/background_dark" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Konum Bul"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+</android.support.constraint.ConstraintLayout>
